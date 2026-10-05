@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+	body{
+		margin:0;
+		padding: 0;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+
+		color:rgba(12,12,12);
+			}	
+			.main{
+				width: 100%;
+				height: 100vh;
+				position: relative;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			.my-video{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				z-index: 1;
+			}
+		.typing-container{
+			text-align: center;
+		}
+		.typing-text{
+			width: 0;
+			max-width: max-content;
+			overflow: hidden;
+			position: relative;
+			z-index: 2;
+			color: white;
+			white-space: nowrap;
+			border-right: 3px solid #f97316;
+			font-family: 'Courier New';
+			font-size: 4.5rem;
+			font-weight: bold;
+			letter-spacing: 1px;
+			animation: typing 3.5s steps(26) forwards,blink 0.75s step-end infinite;
+		}
+		@keyframes typing{
+			from{width: 0;}
+			to{width:100%;}
+		}
+		@keyframes blink{
+			from,to{border-color: transparent;}
+			50%{border-color: #f97316;}
+		}
+		button{
+			border: 2px solid white;
+			border-radius: 50px;
+			color: gray;
+			position: absolute;
+			top: 700px;
+			right: 750px;
+			height: 26px;
+			background-color: rgba(0, 0, 0, 0.4);
+			z-index: 2;
+		}
+		button:hover{
+			transform: scale(1.25);
+			box-shadow: 0 20px 50px 20px rgb(99, 102,245);
+		}
+		button:active{
+			transform: scale(0.98);	background-color:gray ;
+		}
+		a{
+			text-align: center;
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<video src="v6.mp4" autoplay loop muted class="my-video ">
+ </video> 
+<div class="typing-container">
+    <p class="typing-text">Wellcome to my wabesite</p>
+    <button>
+    <a href="file:///D:/my%20page/car.html">Explore Now </a>
+    </button>
+  </div>
+</div>
+</body>
+</html>
